@@ -63,8 +63,8 @@ public enum PushEnumFactory {
         return unmarshal != null ? (Push) unmarshal : null;
     }
 
-    public Reply parse(Push push) {
-        return push != null ? pushParser.parse(push) : null;
+    public Reply parse(Push push,Integer tenanid) {
+        return push != null ? pushParser.parse(push,tenanid) : null;
     }
 
 }

@@ -11,7 +11,7 @@ import org.usc.wechat.mp.sdk.vo.push.TextPush;
  */
 public class TextPushParser implements PushParser {
     @Override
-    public Reply parse(Push push) {
+    public Reply parse(Push push,Integer tenanid) {
         if (!(push instanceof TextPush)) {
             return null;
         }

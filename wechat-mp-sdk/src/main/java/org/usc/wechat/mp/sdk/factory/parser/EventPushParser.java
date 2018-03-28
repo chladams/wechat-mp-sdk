@@ -15,7 +15,7 @@ import org.usc.wechat.mp.sdk.vo.push.event.EventPush;
  */
 public class EventPushParser implements PushParser {
     @Override
-    public Reply parse(Push push) {
+    public Reply parse(Push push,Integer tenanid) {
         if (!(push instanceof EventPush)) {
             return null;
         }
