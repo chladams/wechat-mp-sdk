@@ -30,7 +30,7 @@ public abstract class Push extends AbstractToStringBuilder{
     private String msgId;
 
     @XmlElement(name = "TenanId")
-    private String TenanId;
+    private String tenanId;
 
     public String getToUserName() {
         return toUserName;
@@ -73,10 +73,10 @@ public abstract class Push extends AbstractToStringBuilder{
     }
 
     public String getTenanId() {
-        return TenanId;
+        return tenanId;
     }
 
     public void setTenanId(String tenanId) {
-        TenanId = tenanId;
+        this.tenanId = tenanId;
     }
 }
