@@ -29,6 +29,9 @@ public abstract class Push extends AbstractToStringBuilder{
     @XmlElement(name = "MsgId")
     private String msgId;
 
+    @XmlElement(name = "TenanId")
+    private String TenanId;
+
     public String getToUserName() {
         return toUserName;
     }
@@ -69,4 +72,11 @@ public abstract class Push extends AbstractToStringBuilder{
         this.msgId = msgId;
     }
 
+    public String getTenanId() {
+        return TenanId;
+    }
+
+    public void setTenanId(String tenanId) {
+        TenanId = tenanId;
+    }
 }

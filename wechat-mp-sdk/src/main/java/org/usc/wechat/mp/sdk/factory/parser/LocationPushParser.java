@@ -9,7 +9,7 @@ import org.usc.wechat.mp.sdk.vo.push.Push;
  */
 public class LocationPushParser implements PushParser {
     @Override
-    public Reply parse(Push push,Integer tenanid) {
+    public Reply parse(Push push) {
         return null;
     }
 

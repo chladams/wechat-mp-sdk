@@ -8,5 +8,5 @@ import org.usc.wechat.mp.sdk.vo.push.Push;
  * @author Shunli
  */
 public interface PushParser {
-    Reply parse(Push push,Integer tenanid);
+    Reply parse(Push push);
 }
